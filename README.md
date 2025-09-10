@@ -16,7 +16,25 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 6. Opening a pull request to contribute the branch to the original project
 7. Syncing your fork’s main branch once the PR is 
 
-![forking with remote changes](media/forking-with-remote-changes.png)
+```mermaid
+graph TD
+    subgraph GITHUB
+        ORIGINAL_REPO["Original Repo<br>Project on GitHub"]
+        FORK[Fork]
+        PULL_REQUEST["Pull Request<br>How you contribute your changes"]
+    end
+
+    subgraph YOUR_BROWSER
+        BROWSER_BRANCH[Branch]
+        URL("https://github.com/username/repo/tree/branch")
+    end
+
+    ORIGINAL_REPO -- "Your GitHub Account" --> FORK
+    FORK --> BROWSER_BRANCH
+    BROWSER_BRANCH -- "Make Changes" --> BROWSER_BRANCH
+    BROWSER_BRANCH --> PULL_REQUEST
+    PULL_REQUEST -.-> ORIGINAL_REPO
+```
 
 ## Advanced topics to be covered
 
@@ -24,7 +42,25 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 2. Choosing and installing an editor
 3. Pushing your branch from local to remote
 
-![forking with local changes](media/forking-with-local-changes.png)
+```mermaid
+graph TD
+    subgraph GITHUB
+        ORIGINAL_REPO["Original Repo<br>Project on GitHub"]
+        FORK[Fork]
+        PULL_REQUEST["Pull Request<br>How you contribute your changes"]
+    end
+
+    subgraph YOUR_COMPUTER
+        LOCAL_CLONE[Local Clone]
+        BRANCH[Branch]
+    end
+
+    ORIGINAL_REPO -- "Your GitHub Account" --> FORK
+    FORK --> LOCAL_CLONE
+    LOCAL_CLONE -- "Make Changes" --> BRANCH
+    BRANCH --> PULL_REQUEST
+    PULL_REQUEST -.-> ORIGINAL_REPO
+```
 
 ## Maintainer
 

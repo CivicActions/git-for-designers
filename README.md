@@ -8,7 +8,7 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 
 ## Main topics to be covered
 
-1. Forking and branching
+1. [Forking and branching](docs/1-forking-a-repo-on-github.md)
 	- Forking an existing repo
 	- Creating a branch in your forked repo
 2. Editing files

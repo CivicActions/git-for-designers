@@ -1,5 +1,7 @@
 # 1. Forking and branching
 
+🍞 [Outline](../README.md) → 1. Forking and branching
+
 ⚠️ Document status: **Draft**
 
 ## Forking a repo on GitHub

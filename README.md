@@ -8,15 +8,14 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 
 ## Main topics to be covered
 
-1. [Forking and branching](docs/1-forking-a-repo-on-github.md)
-	- Forking an existing repo
-	- Creating a branch in your forked repo
-2. Editing files
-	- Making changes to a text file using the basic editor
-	- Making changes to a text file using VS Code in the browser
-3. Committing your changes
-4. Opening a pull request to the original project
-5. Syncing your fork once the PR is accepted
+1. [Forking and branching](docs/1-fork-and-branch.md)
+	- Fork an existing repo
+	- Create a branch in your forked repo
+2. [Editing and committing](docs/2-edit-and-commit.md)
+	- Make changes using the basic editor
+	- Make changes using the online code editor
+3. Opening a pull request to the original project
+4. Syncing your fork once the PR is accepted
 
 ```mermaid
 graph TD

@@ -1,4 +1,4 @@
-# 2. Editing files
+# 2. Editing and committing files
 
 🍞 [Outline](../README.md) → 2. Editing and committing
 

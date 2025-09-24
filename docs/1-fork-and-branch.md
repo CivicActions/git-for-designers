@@ -4,27 +4,27 @@
 
 ⚠️ Document status: **Draft**
 
-## Forking a repo on GitHub
+## Fork a repo on GitHub
 
-Task: Fork a repo so you can work on it separately.
+*Task: Fork a repo so you can work on it separately.*
 
-1. Log in to GitHub: [/login](https://github.com/login)
+1. Log in to GitHub: [/login](https://github.com/login).
 
-2. Visit the repo you want to fork, e.g. [/CivicActions/git-for-designers](https://github.com/CivicActions/git-for-designers)
+2. Visit the repo you want to fork, e.g. [/CivicActions/git-for-designers](https://github.com/CivicActions/git-for-designers).
 
 3. Look to the right of the repo name, or just below it on small screens, and click the **Fork** action.
 
 4. On the **Create a new fork** page, make sure your name is selected then click **Create fork**.
 
-5. After a few seconds your forked repo will load at **/\<your-username\>/git-for-designers**.
+5. After a few seconds your forked repo will load at `/<your-username>/git-for-designers`.
 
 You now have a forked repo that is a copy of the original. You might be tempted to get to work on changing files, but there is one more step before we do that.
 
-## Creating a branch on GitHub
+## Create a branch on GitHub
 
-Task: Create a separate branch to make your changes in.
+*Task: Create a separate branch to make your changes in.*
 
-1. Visit your forked repo at **/\<your-username\>/git-for-designers**
+1. Visit your forked repo at `/<your-username>/git-for-designers`.
 
 2. Notice the button labeled **main** below the name of your repo at the upper left of screen.
 
@@ -32,7 +32,7 @@ Task: Create a separate branch to make your changes in.
 
 4. Click **New branch**.
 
-5. Provide a name using lowercase letters and hyphens between words, e.g. **my-first-branch**.
+5. Provide a name using lowercase letters and hyphens between words, e.g. `my-first-branch`.
 
 6. Click **Create new branch**.
 

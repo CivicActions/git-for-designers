@@ -1,4 +1,4 @@
-# 1. Forking and branching
+# 1. Fork and branch a project
 
 🍞 [Outline](../README.md) → 1. Forking and branching
 
@@ -45,3 +45,8 @@ You now have a forked repo that is a copy of the original. You might be tempted 
 8. Select either **my-first-branch** link to make it active.
 
 You have now prepared your repo for editing.
+
+## Topic navigation
+
+*	Next topic: [2. Edit and commits files](2-edit-and-commit.md)
+*	This topic: **1. Fork and branch a project**

@@ -1,4 +1,4 @@
-# 2. Editing and committing files
+# 2. Edit and commit files
 
 🍞 [Outline](../README.md) → 2. Editing and committing
 
@@ -88,3 +88,9 @@ Complete steps 1 and 2 above, then:
 9. Enter a commit message at the top of the left column then click **Commit & Push** your changes.
 10. All of your changed files are pushed to the active branch on GitHub.
 11. Click the hamburger menu above the Explorer icon and select **Go to repository** to return to the GitHub UI.
+
+## Topic navigation
+
+*	Next topic: [3. Open a pull request](3-open-pull-request.md)
+*	This topic: **2. Edit and commit files**
+*	Previous topic: [1. Fork and branch a project](1-fork-and-branch.md)

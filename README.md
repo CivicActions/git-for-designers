@@ -14,7 +14,7 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 2. [Editing and committing](docs/2-edit-and-commit.md)
 	- Make changes using the basic editor
 	- Make changes using the online code editor
-3. Opening a pull request to the original project
+3. [Opening a pull request to the original project](docs/3-open-pull-request.md)
 4. Syncing your fork once the PR is accepted
 
 ```mermaid

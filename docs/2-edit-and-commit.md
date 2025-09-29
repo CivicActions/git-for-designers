@@ -1,6 +1,6 @@
 # 2. Edit and commit files
 
-🍞 [Outline](../README.md) → 2. Editing and committing
+🍞 [Outline](../README.md) → 2. Edit and commit files
 
 ⚠️ Document status: **Draft**
 

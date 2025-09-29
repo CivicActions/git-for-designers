@@ -1,4 +1,4 @@
-# 3. Opening a pull request (PR)
+# 3. Open a pull request (PR)
 
 🍞 [Outline](../README.md) → 3. Opening a pull request
 
@@ -47,3 +47,8 @@ For more information on pull requests see:
 
 *	[GitHub: Contributing to a project — Git community site](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project)
 *	[About pull requests — GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
+
+## Topic navigation
+
+*	This topic: **3. Open a pull request**
+*	Previous topic: [2. Edit and commits files](2-edit-and-commit.md)

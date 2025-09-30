@@ -18,12 +18,26 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 4. Syncing your fork once the PR is accepted
 
 ```mermaid
+---
+config:
+  theme: 'base'
+  themeVariables:
+    darkMode: 'true'
+    background: '#000'
+    primaryColor: '#212121'
+    primaryTextColor: '#fff'
+    primaryBorderColor: '#fff'
+    lineColor: '#ccc'
+    secondaryColor: '#000'
+    tertiaryColor: '#333'
+---
 flowchart LR
-    style GitHub fill:black
-    style Maintainer fill:#212121,stroke-width:3px,stroke:#FA8400
-    style You fill:#212121,stroke-width:3px,stroke:#FF2974
-    style ORIGINAL fill:#303030,stroke-width:3px,stroke:#CCC
-    style FORKED fill:#303030,stroke-width:3px,stroke:#CCC
+    style GitHub fill:black,color:#fff;
+    style Maintainer fill:#212121,stroke-width:3px,stroke:#FA8400,color:#fff;
+    style You fill:#212121,stroke-width:3px,stroke:#FF2974,color:#fff;
+    style ORIGINAL fill:#303030,stroke-width:3px,stroke:#CCC,color:#fff;
+    style FORKED fill:#303030,stroke-width:3px,stroke:#CCC,color:#fff;
+    linkStyle default stroke:#fff,color:#fff
     subgraph GitHub
         subgraph You
             direction TB

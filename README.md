@@ -17,24 +17,30 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 3. [Opening a pull request to the original project](docs/3-open-pull-request.md)
 4. Syncing your fork once the PR is accepted
 
-```mermaid
-graph TD
-    subgraph GITHUB
-        ORIGINAL_REPO["Original Repo<br>Project on GitHub"]
-        FORK[Fork]
-        PULL_REQUEST["Pull Request<br>How you contribute your changes"]
+```flowchart LR
+    style GitHub fill:black
+    style Maintainer fill:#212121,stroke-width:3px,stroke:#FA8400
+    style You fill:#212121,stroke-width:3px,stroke:#FF2974
+    style ORIGINAL fill:#303030,stroke-width:3px,stroke:#CCC
+    style FORKED fill:#303030,stroke-width:3px,stroke:#CCC
+    subgraph GitHub
+        subgraph You
+            direction TB
+            subgraph FORKED[Forked repo]
+                direction TB
+                F_MAIN{{Main branch}} -- "2. Create and edit a branch" --> F_BRANCH{{Working branch}}
+            end
+            F_BRANCH -- "3. Make a PR" --> PR
+        end
+        subgraph Maintainer
+            direction TB
+            subgraph ORIGINAL[Original repo]
+                O_MAIN{{Main branch}} -- "4. Sync the fork" --> F_MAIN
+            end
+        end
+        ORIGINAL == "1. Fork the repo" ==> FORKED
+        PR@{ shape: doc, label: "Pull Request" } -.-> O_MAIN
     end
-
-    subgraph YOUR_BROWSER
-        BROWSER_BRANCH[Branch]
-        URL("https://github.com/username/repo/tree/branch")
-    end
-
-    ORIGINAL_REPO -- "Your GitHub Account" --> FORK
-    FORK --> BROWSER_BRANCH
-    BROWSER_BRANCH -- "Make Changes" --> BROWSER_BRANCH
-    BROWSER_BRANCH --> PULL_REQUEST
-    PULL_REQUEST -.-> ORIGINAL_REPO
 ```
 
 ## Advanced topics

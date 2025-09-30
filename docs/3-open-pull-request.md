@@ -50,5 +50,6 @@ For more information on pull requests see:
 
 ## Topic navigation
 
+*	Next topic: [4. Sync fork from original](4-sync-from-original.md)
 *	This topic: **3. Open a pull request**
 *	Previous topic: [2. Edit and commits files](2-edit-and-commit.md)

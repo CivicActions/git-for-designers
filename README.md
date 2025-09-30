@@ -6,7 +6,7 @@
 
 The goal of this project is to help those in non-technical (or not *primarily* technical) roles, such as designers, understand and practice the basics of using Git through collaborative editing of documentation. This repo contains text files and associated media, rather than code.
 
-## Main topics to be covered
+## Main topics
 
 1. [Forking and branching](docs/1-fork-and-branch.md)
 	- Fork an existing repo
@@ -15,9 +15,9 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 	- Make changes using the basic editor
 	- Make changes using the online code editor
 3. [Opening a pull request to the original project](docs/3-open-pull-request.md)
-4. Syncing your fork once the PR is accepted
+4. [Syncing your fork once the PR is accepted](4-sync-from-original.md)
 
-### GitHub-only workflow diagram
+### GitHub-only workflow
 
 ```mermaid
 ---
@@ -45,28 +45,37 @@ flowchart LR
             direction TB
             subgraph FORKED[Forked repo]
                 direction TB
-                F_MAIN{{Main branch}} -->|2. Create and edit a branch| F_BRANCH{{Working branch}}
+                F_MAIN{{Main branch}}
+                F_BRANCH{{Working branch}}
             end
-            F_BRANCH -->|3. Make a PR| PR
+            PR@{ shape: doc, label: "Pull Request" }
         end
         subgraph Maintainer
             direction TB
             subgraph ORIGINAL[Original repo]
-                O_MAIN{{Main branch}} -->|4. Sync the fork| F_MAIN
+                O_MAIN{{Main branch}}
             end
         end
         ORIGINAL ==>|1. Fork the repo| FORKED
-        PR@{ shape: doc, label: "Pull Request" } -.->|merges Working branch| O_MAIN
+        F_MAIN -->|2. Create and edit a branch| F_BRANCH
+        F_BRANCH ---|3. Make a PR| PR
+        O_MAIN -->|4. Sync the fork| F_MAIN
+        PR -.->|merges Working branch| O_MAIN
     end
 ```
 
+## Intermediate topics
+
+5. Working with images
+6. Resolving merge conflicts
+
 ## Advanced topics
 
-1. Cloning a fork to your local machine
-2. Choosing and installing an editor
-3. Pushing your branch from local to remote
+7. Cloning a fork to your local machine
+8. Choosing and installing an editor
+9. Pushing your branch from local to remote
 
-### Local to GitHub workflow diagram
+### Local to GitHub workflow
 
 ```mermaid
 ---
@@ -121,6 +130,12 @@ flowchart BT
     PR -.->|merges Working branch| O_MAIN
     O_MAIN -->|6. Sync the repo| F_MAIN
 ```
+
+## Further reading
+
+* [GitHub glossary](https://docs.github.com/en/get-started/learning-about-github/github-glossary)
+* [Git reference](https://git-scm.com/docs)
+* [Git commmands cheat sheet](https://git-scm.com/cheat-sheet)
 
 ## Maintainers
 

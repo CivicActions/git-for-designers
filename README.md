@@ -17,6 +17,8 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 3. [Opening a pull request to the original project](docs/3-open-pull-request.md)
 4. Syncing your fork once the PR is accepted
 
+### GitHub-only workflow diagram
+
 ```mermaid
 ---
 config:
@@ -43,18 +45,18 @@ flowchart LR
             direction TB
             subgraph FORKED[Forked repo]
                 direction TB
-                F_MAIN{{Main branch}} -- "2. Create and edit a branch" --> F_BRANCH{{Working branch}}
+                F_MAIN{{Main branch}} -->|2. Create and edit a branch| F_BRANCH{{Working branch}}
             end
-            F_BRANCH -- "3. Make a PR" --> PR
+            F_BRANCH -->|3. Make a PR| PR
         end
         subgraph Maintainer
             direction TB
             subgraph ORIGINAL[Original repo]
-                O_MAIN{{Main branch}} -- "4. Sync the fork" --> F_MAIN
+                O_MAIN{{Main branch}} -->|4. Sync the fork| F_MAIN
             end
         end
-        ORIGINAL == "1. Fork the repo" ==> FORKED
-        PR@{ shape: doc, label: "Pull Request" } -.-> O_MAIN
+        ORIGINAL ==>|1. Fork the repo| FORKED
+        PR@{ shape: doc, label: "Pull Request" } -.->|merges Working branch| O_MAIN
     end
 ```
 
@@ -64,24 +66,60 @@ flowchart LR
 2. Choosing and installing an editor
 3. Pushing your branch from local to remote
 
+### Local to GitHub workflow diagram
+
 ```mermaid
-graph TD
-    subgraph GITHUB
-        ORIGINAL_REPO["Original Repo<br>Project on GitHub"]
-        FORK[Fork]
-        PULL_REQUEST["Pull Request<br>How you contribute your changes"]
+---
+config:
+  theme: 'base'
+  themeVariables:
+    darkMode: 'true'
+    background: '#000'
+    primaryColor: '#212121'
+    primaryTextColor: '#fff'
+    primaryBorderColor: '#fff'
+    lineColor: '#ccc'
+    secondaryColor: '#000'
+    tertiaryColor: '#333'
+---
+flowchart BT
+    style GitHub fill:black,color:#fff,stroke-width:3px,stroke:CornflowerBlue;
+    style L_MACHINE fill:black,color:#fff,stroke-width:3px,stroke:#FF2974;
+    style Maintainer fill:#212121,stroke-width:3px,stroke:#FA8400,color:#fff;
+    style You fill:#212121,stroke-width:3px,stroke:#FF2974,color:#fff;
+    style ORIGINAL fill:#303030,stroke-width:3px,stroke:#CCC,color:#fff;
+    style FORKED fill:#303030,stroke-width:3px,stroke:#CCC,color:#fff;
+    style L_CLONE fill:#303030,stroke-width:3px,stroke:#CCC,color:#fff;
+    subgraph L_MACHINE[Local machine]
+        subgraph L_CLONE[Forked clone]
+            direction TB
+            L_MAIN{{Main branch}}
+            L_BRANCH{{Working branch}}
+        end
     end
-
-    subgraph YOUR_COMPUTER
-        LOCAL_CLONE[Local Clone]
-        BRANCH[Branch]
+    subgraph GitHub
+        direction TB
+        subgraph Maintainer
+            subgraph ORIGINAL[Original repo]
+                O_MAIN{{Main branch}}
+            end
+        end
+        subgraph You
+            subgraph FORKED[Forked repo]
+                direction TB
+                F_MAIN{{Main branch}} 
+                F_BRANCH{{Working branch}}
+                PR@{ shape: doc, label: "Pull Request" }
+            end
+        end
     end
-
-    ORIGINAL_REPO -- "Your GitHub Account" --> FORK
-    FORK --> LOCAL_CLONE
-    LOCAL_CLONE -- "Make Changes" --> BRANCH
-    BRANCH --> PULL_REQUEST
-    PULL_REQUEST -.-> ORIGINAL_REPO
+    O_MAIN ===>|1. Fork the repo| F_MAIN
+    F_MAIN ==>|2. Clone to local| L_MAIN
+    L_MAIN --->|3. Create and edit a branch| L_BRANCH
+    L_BRANCH --->|4. Push to remote| F_BRANCH
+    F_BRANCH ---|5. Make a PR| PR
+    PR -.->|merges Working branch| O_MAIN
+    O_MAIN -->|6. Sync the repo| F_MAIN
 ```
 
 ## Maintainers

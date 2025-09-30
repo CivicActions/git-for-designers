@@ -1,6 +1,6 @@
 # 1. Fork and branch a project
 
-🍞 [Outline](../README.md) → 1. Fork and branch a project
+[Git for designers](../README.md) → 1. Fork and branch a project
 
 ⚠️ Document status: **Draft**
 

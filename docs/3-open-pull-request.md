@@ -1,6 +1,6 @@
 # 3. Open a pull request (PR)
 
-🍞 [Outline](../README.md) → 3. Open a pull request (PR)
+[Git for designers](../README.md) → 3. Open a pull request (PR)
 
 ⚠️ Document status: **Draft**
 

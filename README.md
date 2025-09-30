@@ -17,7 +17,8 @@ The goal of this project is to help those in non-technical (or not *primarily* t
 3. [Opening a pull request to the original project](docs/3-open-pull-request.md)
 4. Syncing your fork once the PR is accepted
 
-```flowchart LR
+```mermaid
+flowchart LR
     style GitHub fill:black
     style Maintainer fill:#212121,stroke-width:3px,stroke:#FA8400
     style You fill:#212121,stroke-width:3px,stroke:#FF2974

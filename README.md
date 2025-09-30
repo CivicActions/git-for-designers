@@ -2,11 +2,11 @@
 
 ⚠️ Document status: **Draft**
 
-## Description
+## ❓ Project goal
 
 The goal of this project is to help those in non-technical (or not *primarily* technical) roles, such as designers, understand and practice the basics of using Git through collaborative editing of documentation. This repo contains text files and associated media, rather than code.
 
-## Main topics
+## 🚙 Main topics
 
 1. [Forking and branching](docs/1-fork-and-branch.md)
 	- Fork an existing repo
@@ -64,12 +64,12 @@ flowchart LR
     end
 ```
 
-## Intermediate topics
+## 🚗 Intermediate topics
 
 5. Working with images
 6. Resolving merge conflicts
 
-## Advanced topics
+## 🏎️ Advanced topics
 
 7. Cloning a fork to your local machine
 8. Choosing and installing an editor
@@ -131,17 +131,17 @@ flowchart BT
     O_MAIN -->|6. Sync the repo| F_MAIN
 ```
 
-## Further reading
+## 📖 Further reading
 
 * [GitHub glossary](https://docs.github.com/en/get-started/learning-about-github/github-glossary)
 * [Git reference](https://git-scm.com/docs)
 * [Git commmands cheat sheet](https://git-scm.com/cheat-sheet)
 
-## Maintainers
+## 🙋 Maintainers
 
 * [Adrian Cooke](https://github.com/adriancooke)
 * [Daniel Mundra](https://github.com/dmundra)
 
-## Credits
+## ✨ Credits
 
 Special thanks to [Daniel Mundra](https://github.com/dmundra) for assistance.
